@@ -5,10 +5,8 @@ branches:
   only:
     - master
     - develop
-# install: 
-#   - npm install
 script:
-  - "node index.js"
+  - "mvn verify"
 
 # Heroku Apps: 
 #   app: uela-upsala CICD [Github > Travis > Heroku]
