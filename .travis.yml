@@ -1,0 +1,30 @@
+language: java
+jdk:
+  - oraclejdk8
+branches:
+  only:
+    - master
+    - develop
+# install: 
+#   - npm install
+script:
+  - "node index.js"
+
+# Heroku Apps: 
+#   app: uela-upsala CICD [Github > Travis > Heroku]
+deploy:
+  provider: heroku
+  api_key:
+    secure: a044f557-9c08-4626-8b73-c29df99660cd
+  app: 
+    master: fran-backend-master
+    develop: fran-backend-develop
+  on:
+    repo: dmerniestic1987/fran-backend
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
+
+
