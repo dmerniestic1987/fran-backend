@@ -9,7 +9,10 @@ script:
   - "mvn verify"
 
 # Heroku Apps: 
-#   app: uela-upsala CICD [Github > Travis > Heroku]
+#   fran-backend CICD [Github > Travis > Heroku]
+# - [Github       ] Login con dmerniestic1987
+# - [Travis-ci.com] Login com github de dmerniestic1987
+# - [Heroku       ] Login com diego.alejandro.mernies@gmail.com
 deploy:
   provider: heroku
   api_key:
