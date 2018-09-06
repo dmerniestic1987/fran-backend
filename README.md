@@ -11,7 +11,14 @@ mvn verify
 
 ```
 
+
 ## Run
+
+```sh
+java -jar target/FRAN-Backend-0.0.1-SNAPSHOT.jar
+```
+
+## Prod
 
 Tiene integracion con Travis-CI y Heroku App
 
