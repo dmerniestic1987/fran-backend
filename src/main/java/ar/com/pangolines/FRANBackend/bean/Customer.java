@@ -12,6 +12,7 @@ public class Customer implements Serializable{
     private String customerId;
     private String customerName;
     private String companyName;
+    private String ethereumPublicAdress;
     
 	public String getCustomerId() {
 		return customerId;
@@ -31,4 +32,11 @@ public class Customer implements Serializable{
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
 	}
+	public String getEthereumPublicAdress() {
+		return ethereumPublicAdress;
+	}
+	public void setEthereumPublicAdress(String ethereumPublicAdress) {
+		this.ethereumPublicAdress = ethereumPublicAdress;
+	}
+	
 }

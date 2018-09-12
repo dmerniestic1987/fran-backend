@@ -45,13 +45,21 @@ public class CustomerController implements ICustomerController {
     	return customer;
     }
     
-    @Override
-    public void updateCustomer(@RequestBody Customer customer) {
-    	logger.info("CustomerController PUT /customers");
-    }
 
 	@Override
 	public void deleteCustomer(String customerId) {
 		logger.info("CustomerController DELTE /customers/" + customerId);		
+	}
+
+	@Override
+	public void updateCustomer(String customerId, Customer customer) {
+		logger.info("CustomerController PUT /customers/" + customerId);
+		
+	}
+
+	@Override
+	public void updateCustomerEthereumAddress(String customerId, String walletAddress) {
+		logger.info("CustomerController PUT /customers/" + customerId + "/wallet/" + walletAddress);
+		
 	}
 }
