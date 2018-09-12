@@ -1,6 +1,36 @@
-1. Hay que conseguir un token en Infura. Ofrece una API key para acceder a Ethereum.
+https://www.youtube.com/watch?v=ea3miXs_P6Y
 
-API KEY: 722eab5226e84f39b01133524cd7dc60
-API SECRET: e2e1d734caea46bb8b39dc2e428bcc1a
-ENDPINT: https://mainnet.infura.io/v3/722eab5226e84f39b01133524cd7dc60
+1. Hay que conseguir un token en Infura. Ofrece una API key para acceder a Ethereum.
+Ofrece clientes Eth gratuitos en la nube
+
+Se puede crear una wallet (línea de comandos)
+$ web3j wallet create
+Genera un archivo como UTC--2018-08-24T01-32-50.967000000Z--0b2b8f8365bc45b88057fcab1629fef25c932d73.json
+
+Para actualizar la clave de una wallet
+$ web3j wallet update <walletfile>
+
+para enviar dinero de un wallet
+$ web3j wallet send <walletfile> 0x<address>|<ensName>
+
+Instalación de web3j
+$ brew tap web3j/web3j
+$ brew install web3j
+
+Para ver las transacciones
+-TestNet: https://testnet.etherscan.io/
+-TestNet Ropsten: https://ropsten.etherscan.io/
+-TestNet Kovan: https://kovan.etherscan.io/
+-TesNet Rinkeby: https://rinkeby.etherscan.io/
+
+-MainNEt: https://etherscan.io/
+
+==============================
+Creando el cliente en Java.
+Web3j web3 = Web3j.build(new HttpService(ETHEREUM_NODE_ENDPOINT));
+
+Llamando metodos
+web3.metodo(param1, param2, paramN).send(): (Sincronico)
+web3.metodo(param1, param2, paramN).sendAsync(): (Asincronico)
+
 
