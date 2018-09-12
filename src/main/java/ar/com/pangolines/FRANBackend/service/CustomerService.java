@@ -23,4 +23,10 @@ public interface CustomerService {
 	 * @return listCustomer
 	 */
 	public List<Customer> getCustomerDetails();
+
+	/**
+	 * Creates a new customer
+	 * @param customer
+	 */
+	public void createCustomer(Customer customer);
 }

@@ -49,4 +49,10 @@ public class CustomerServiceMockImpl implements CustomerService{
 		return listCustomers;
 	}
 
+	@Override
+	public void createCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
