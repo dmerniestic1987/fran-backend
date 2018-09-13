@@ -16,17 +16,17 @@ public interface CustomerService {
 	 * @param customerId
 	 * @return customer if is found, null otherwise
 	 */
-	public Customer getCustomerDetail(String customerId);	
+	public Customer getCustomerByCustomerId(String customerId);	
 	
 	/**
 	 * Get the list the customers
 	 * @return listCustomer
 	 */
-	public List<Customer> getCustomerDetails();
+	public List<Customer> getCustomers();
 
 	/**
 	 * Creates a new customer
 	 * @param customer
 	 */
-	public void createCustomer(Customer customer);
+	public Customer createCustomer(Customer customer);
 }

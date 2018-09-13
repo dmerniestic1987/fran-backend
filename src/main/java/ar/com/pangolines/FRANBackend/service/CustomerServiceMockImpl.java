@@ -11,7 +11,7 @@ import ar.com.pangolines.FRANBackend.bean.Customer;
 public class CustomerServiceMockImpl implements CustomerService{
 
 	@Override
-	public Customer getCustomerDetail(String customerId) {
+	public Customer getCustomerByCustomerId(String customerId) {
 		Customer customer = new Customer();
 		customer.setCustomerId("1");
 		customer.setCompanyName("BBVA Francés");
@@ -20,7 +20,7 @@ public class CustomerServiceMockImpl implements CustomerService{
 	}
 	
 	@Override
-	public List<Customer> getCustomerDetails(){
+	public List<Customer> getCustomers(){
 		List<Customer> listCustomers = new LinkedList<Customer>();
 		
 		Customer customer = new Customer();
@@ -50,9 +50,8 @@ public class CustomerServiceMockImpl implements CustomerService{
 	}
 
 	@Override
-	public void createCustomer(Customer customer) {
-		// TODO Auto-generated method stub
-		
+	public Customer createCustomer(Customer customer) {
+		return customer;	
 	}
 
 }

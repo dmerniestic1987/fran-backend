@@ -23,19 +23,19 @@ public class CustomerController implements ICustomerController {
 	private static final Logger logger = LogManager.getLogger(CustomerController.class);
 	
     @Autowired
-    @Qualifier("customerServiceMockImpl")
+    @Qualifier("customerServiceImpl")
     private CustomerService customerService;
  
     @Override
     public List<Customer> getCustomers(){
     	logger.info("CustomerController GET /customers");
-    	return customerService.getCustomerDetails();
+    	return customerService.getCustomers();
     }
     
     @Override
     public Customer getCustomerById(@PathVariable String customerId) {
     	logger.info("CustomerController GET /customers/" + customerId);
-        return customerService.getCustomerDetail(customerId);
+        return customerService.getCustomerByCustomerId(customerId);
     }
     
     @Override
