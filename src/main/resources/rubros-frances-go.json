@@ -1,49 +1,62 @@
 {
-"name": "Rubros",
 "values": [{
-  "id": "12533",
-  "name": "Destacados"
+  "rubroFrancesGo": "12533",
+  "name": "Destacados",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "16458",
-  "name": "Electro y Tecnolog\u00eda"
+  "rubroFrancesGo": "16458",
+  "name": "Electro y Tecnolog\u00eda",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "13527",
-  "name": "F\u00fatbol"
+  "rubroFrancesGo": "13527",
+  "name": "F\u00fatbol",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "16466",
-  "name": "Regalos"
+  "rubroFrancesGo": "16466",
+  "name": "Regalos",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "4883",
-  "name": "Seas o No Cliente BBVA"
+  "rubroFrancesGo": "4883",
+  "name": "Seas o No Cliente BBVA",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "3579",
-  "name": "Automotores"
+  "rubroFrancesGo": "3579",
+  "name": "Automotores",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "3417",
-  "name": "Belleza y Cuidado Personal"
+  "rubroFrancesGo": "3417",
+  "name": "Belleza y CurubroFrancesGoado Personal",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "3413",
+  "rubroFrancesGo": "3413",
   "name": "Entretenimiento"
 }, {
-  "id": "3412",
-  "name": "Gastronom\u00eda"
+  "rubroFrancesGo": "3412",
+  "name": "Gastronom\u00eda",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "3578",
-  "name": "Hogar y Deco"
+  "rubroFrancesGo": "3578",
+  "name": "Hogar y Deco",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "3422",
-  "name": "Viajes y Turismo"
+  "rubroFrancesGo": "3422",
+  "name": "Viajes y Turismo",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "3427",
-  "name": "Promociones Especiales"
+  "rubroFrancesGo": "3427",
+  "name": "Promociones Especiales",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "3517",
-  "name": "Moda"
+  "rubroFrancesGo": "3517",
+  "name": "Moda",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "3435",
-  "name": "Otros Comercios y Servicios"
+  "rubroFrancesGo": "3435",
+  "name": "Otros Comercios y Servicios",
+  "rubroBigData": "RUBRO 001"
 }, {
-  "id": "3580",
-  "name": "Jugueterias"
+  "rubroFrancesGo": "3580",
+  "name": "Jugueterias",
+  "rubroBigData": "RUBRO 001"
 }]
 }

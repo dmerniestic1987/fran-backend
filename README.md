@@ -40,3 +40,12 @@ Luego: Los entornos son:
 cd /home/diego/src/github/dmerniestic1987/pangolines/pangolines-coin
 
 web3j truffle generate build/contracts/PangolinesToken.json -o java -p ar.com.pangolines.FRANBackend.contract
+
+
+## URL 
+MASTER 
+http://franbackendmaster-env.kyw6m2pvpu.us-west-2.elasticbeanstalk.com/
+
+DEVELOP 
+http://pango-fran-backend-develop.us-west-2.elasticbeanstalk.com/
+

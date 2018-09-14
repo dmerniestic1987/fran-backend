@@ -77,12 +77,19 @@
 			<version>${org.web3j.version}</version>
 			<scope>compile</scope>
 		</dependency>
-<dependency>
-    <groupId>org.web3j</groupId>
-    <artifactId>abi</artifactId>
-    <version>${org.web3j.version}</version>
-    			<scope>compile</scope>
-</dependency>
+
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>4.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.web3j</groupId>
+			<artifactId>abi</artifactId>
+			<version>${org.web3j.version}</version>
+			<scope>compile</scope>
+		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
