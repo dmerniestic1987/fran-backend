@@ -23,19 +23,19 @@ public class CustomerController implements ICustomerController {
 	private static final Logger logger = LogManager.getLogger(CustomerController.class);
 	
     @Autowired
-    @Qualifier("customerServiceMockImpl")
+    @Qualifier("customerServiceImpl")
     private CustomerService customerService;
  
     @Override
     public List<Customer> getCustomers(){
     	logger.info("CustomerController GET /customers");
-    	return customerService.getCustomerDetails();
+    	return customerService.getCustomers();
     }
     
     @Override
     public Customer getCustomerById(@PathVariable String customerId) {
     	logger.info("CustomerController GET /customers/" + customerId);
-        return customerService.getCustomerDetail(customerId);
+        return customerService.getCustomerByCustomerId(customerId);
     }
     
     @Override
@@ -48,18 +48,13 @@ public class CustomerController implements ICustomerController {
 
 	@Override
 	public void deleteCustomer(String customerId) {
-		logger.info("CustomerController DELTE /customers/" + customerId);		
+		logger.info("CustomerController DELTE /customers/" + customerId);	
+		customerService.deleteCustomer(customerId);
 	}
 
 	@Override
 	public void updateCustomer(String customerId, Customer customer) {
 		logger.info("CustomerController PUT /customers/" + customerId);
-		
-	}
-
-	@Override
-	public void updateCustomerEthereumAddress(String customerId, String walletAddress) {
-		logger.info("CustomerController PUT /customers/" + customerId + "/wallet/" + walletAddress);
 		
 	}
 }

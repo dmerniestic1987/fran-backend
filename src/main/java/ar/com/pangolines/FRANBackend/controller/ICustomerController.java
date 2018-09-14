@@ -61,18 +61,6 @@ public interface ICustomerController {
     		@ApiParam(value = "Customer que se quiere dar sin alta, con customerId" ,required=true) @RequestBody Customer customer);
     
     
-    @ApiOperation(value = "Actualiza la dirección de la wallet de un cliente determinado", nickname = "updateCustomerEthereumAddress")
-    @PutMapping("/customers/{customerId}/wallet/{walletAddress}")
-    @ApiResponses(value = { 
-    		@ApiResponse(code = 200, message = "Operación exitosa"),
-			@ApiResponse(code = 401, message = "No autorizado"),
-			@ApiResponse(code = 404, message = "Recurso no encontrado"),
-			@ApiResponse(code = 500, message = "Error interno del servidor") })         
-    public void updateCustomerEthereumAddress(
-    		@ApiParam(value = "Id del cliente a actualizar" ,required=true) 	@PathVariable String customerId,
-    		@ApiParam(value = "Datos del cliente a actualizar" ,required=true) 	@PathVariable String walletAddress);    
-    
- 
     @ApiOperation(value = "Elimina un cliente dado un id específico.", nickname = "deleteCustomer")
     @DeleteMapping("/customers/{customerId}")
     @ApiResponses(value = { 
