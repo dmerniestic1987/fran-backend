@@ -12,6 +12,6 @@ import io.swagger.annotations.ApiParam;
 public interface IWalletController {
 	
 	@ApiOperation(value = "Busca una wallet dada una clave publica.", nickname = "getWalletByPublicAddressEthereum", response = Wallet.class)
-	@GetMapping("/wallet/{publicAddress}")
+	@GetMapping("/wallet")
 	public Wallet getWalletByPublicAddressEthereum(@ApiParam(value = "Dirección pulica de la wallet ethereum" ,required=true) 	@PathVariable String publicAddress);
 }
