@@ -64,17 +64,18 @@ public class PangolinesToken extends Contract {
     public static final String FUNC_ALLOWANCE = "allowance";
 
     public static final Event APPROVAL_EVENT = new Event("Approval", 
-            Arrays.<TypeReference<?>>asList(new TypeReference<Address>() {}, new TypeReference<Address>() {}, new TypeReference<Uint256>() {}));
+            Arrays.<TypeReference<?>>asList(new TypeReference<Address>(true) {}, new TypeReference<Address>(true) {}, new TypeReference<Uint256>() {}));
     ;
 
     public static final Event TRANSFER_EVENT = new Event("Transfer", 
-    		Arrays.<TypeReference<?>>asList(new TypeReference<Address>() {}, new TypeReference<Address>() {}, new TypeReference<Uint256>() {}));
+            Arrays.<TypeReference<?>>asList(new TypeReference<Address>(true) {}, new TypeReference<Address>(true) {}, new TypeReference<Uint256>() {}));
     ;
 
     protected static final HashMap<String, String> _addresses;
 
     static {
         _addresses = new HashMap<String, String>();
+        _addresses.put("1", "0x1ea174e353e0f96278085231d4d8832d77ca28a7");
         _addresses.put("3", "0x4df9c93d7fc75719d8432e101ed16116f063b1bd");
         _addresses.put("5777", "0xbe42500b3a1cc1d9db4cc31c1fbfe115160d4b89");
     }
