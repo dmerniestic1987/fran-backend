@@ -2,3 +2,42 @@
 54647322856|AUTOMOTORES|DEPORTES
 23456545366|GASTRONOMIA|REGALOS
 85464353457|ENTRETENIMIENTO|VIAJES Y TURISMO
+
+
+IgMPw3VYEdUsbQbyGQbhsa43vrg2
+YtBUjQoLQFhBaQAqlunmZSjbCLx1
+HNaR13XWSvemMOVeC1Oafbj9dkV2
+
+
+{
+  "accountNumber": "23567543222",
+  "customerId": "IgMPw3VYEdUsbQbyGQbhsa43vrg2",
+  "customerName": "Guilermo Tel ",
+  "ethereumPublicAddress": "0x6e89F6fa95D517eE7a0a293D8A1d3C502bfB0704",
+  "googleUserId": "IgMPw3VYEdUsbQbyGQbhsa43vrg2"
+}
+
+{
+  "accountNumber": "54647322856",
+  "customerId": "YtBUjQoLQFhBaQAqlunmZSjbCLx1",
+  "customerName": "Ninja",
+  "ethereumPublicAddress": "0x6e89F6fa95D517eE7a0a293D8A1d3C502bfB0702",
+  "googleUserId": "YtBUjQoLQFhBaQAqlunmZSjbCLx1"
+}
+
+{
+  "accountNumber": "23456545366",
+  "customerId": "HNaR13XWSvemMOVeC1Oafbj9dkV2",
+  "customerName": "Kakaroto",
+  "ethereumPublicAddress": "0x6e89F6fa95D517eE7a0a293D8A1d3C502bfB0703",
+  "googleUserId": "HNaR13XWSvemMOVeC1Oafbj9dkV2"
+}
+
+
+{
+  "accountNumber": "85464353457",
+  "customerId": "IgMPw3VYEdUsbQbyGQbhsa43vrg2",
+  "customerName": "Guille 2",
+  "ethereumPublicAddress": "0x6e89F6fa95D517eE7a0a293D8A1d3C502bfB0704",
+  "googleUserId": "IgMPw3VYEdUsbQbyGQbhsa43vrg2"
+}
