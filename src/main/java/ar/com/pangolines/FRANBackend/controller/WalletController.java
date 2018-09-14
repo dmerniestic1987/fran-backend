@@ -22,5 +22,4 @@ public class WalletController implements IWalletController {
 		logger.info("getWalletByPublicAddressEthereum=(" + publicAddress + ")");
 		return this.walletService.findWalletByEthereumAddress(publicAddress);
 	}
-
 }

@@ -28,10 +28,9 @@ public class TestCustomerRepository {
 	public void saveCustomer() throws Exception{
 		logger.info("save customer");
 		Customer cu = new Customer();
-		cu.setCompanyName("BBVA");
 		cu.setCustomerId("00001000000001010101");
 		cu.setCustomerName("Gokú");
-		cu.setEthereumPublicAdress("0x6e89F6fa95D517eE7a0a293D8A1d55555bfB0701");
+		cu.setEthereumPublicAddress("0x6e89F6fa95D517eE7a0a293D8A1d55555bfB0701");
 		
 		cu = this.repo.save(cu);
 		assertNotNull(cu);

@@ -36,4 +36,11 @@ public interface CustomerService {
 	 */
 	public void deleteCustomer(String customerId);
 	
+	/**
+	 * Obtriene un cliente dado un gogole id
+	 * @param googleId
+	 * @return customer
+	 */
+	public Customer getCustomerByGoogleId(String googleId);
+	
 }

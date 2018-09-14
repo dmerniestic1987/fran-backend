@@ -14,7 +14,6 @@ public class CustomerServiceMockImpl implements CustomerService{
 	public Customer getCustomerByCustomerId(String customerId) {
 		Customer customer = new Customer();
 		customer.setCustomerId("1");
-		customer.setCompanyName("BBVA Francés");
 		customer.setCustomerName("Ludwing Von Bertalanfy");
 		return customer;
 	}
@@ -25,25 +24,21 @@ public class CustomerServiceMockImpl implements CustomerService{
 		
 		Customer customer = new Customer();
 		customer.setCustomerId("1");
-		customer.setCompanyName("BBVA Francés");
 		customer.setCustomerName("Ludwing Von Bertalanfy");
 		listCustomers.add(customer);
 		
 		customer = new Customer();
 		customer.setCustomerId("2");
-		customer.setCompanyName("Santander Rio");
 		customer.setCustomerName("Rogelio Aguas");
 		listCustomers.add(customer);
 		
 		customer = new Customer();
 		customer.setCustomerId("4");
-		customer.setCompanyName("ACME Corporation");
 		customer.setCustomerName("El Coyote");
 		listCustomers.add(customer);
 		
 		customer = new Customer();
 		customer.setCustomerId("5");
-		customer.setCompanyName("BBVA Francés");
 		customer.setCustomerName("Son Gokú");
 		listCustomers.add(customer);
 		return listCustomers;
@@ -56,6 +51,15 @@ public class CustomerServiceMockImpl implements CustomerService{
 
 	@Override
 	public void deleteCustomer(String customerId) {
+	}
+
+	@Override
+	public Customer getCustomerByGoogleId(String googleId) {
+		Customer customer = new Customer();
+		customer.setCustomerId("1");
+		customer.setCustomerName("Ludwing Von Bertalanfy");
+		
+		return customer;
 	}
 
 }

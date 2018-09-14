@@ -37,7 +37,6 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public Customer createCustomer(Customer customer) {
-		logger.info("createCustomer");
 		return this.customerRepo.save(customer);
 	}
 
@@ -45,6 +44,12 @@ public class CustomerServiceImpl implements CustomerService {
 	public void deleteCustomer(String customerId) {
 		logger.info("deleteCustomer");
 		this.customerRepo.deleteById(customerId);
+	}
+
+	@Override
+	public Customer getCustomerByGoogleId(String googleId) {
+		logger.info("getCustomerByGoogleId");
+		return this.customerRepo.findByGoogleUserId(googleId);
 	}
 
 }

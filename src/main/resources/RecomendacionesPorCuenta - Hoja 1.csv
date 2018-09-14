@@ -1,0 +1,47 @@
+23567543222|ELECTRO Y TECNOLOGIA|VIAJES Y TURISMO
+54647322856|AUTOMOTORES|DEPORTES
+23456545366|GASTRONOMIA|REGALOS
+85464353457|ENTRETENIMIENTO|VIAJES Y TURISMO
+
+
+IgMPw3VYEdUsbQbyGQbhsa43vrg2
+YtBUjQoLQFhBaQAqlunmZSjbCLx1
+HNaR13XWSvemMOVeC1Oafbj9dkV2
+
+{
+  "accountNumber": "2F-CA-1F-13",
+  "customerId": "IgMPw3VYEdUsbQbyGQbhsa43vrg2",
+  "customerName": "Guilermo Tel ",
+  "ethereumPublicAddress": "0x6e89F6fa95D517eE7a0a293D8A1d3C502bfB0704",
+  "googleUserId": "IgMPw3VYEdUsbQbyGQbhsa43vrg2",
+  "companyName": "company"
+}
+
+{
+  "accountNumber": "6D-3C-75-B0",
+  "customerId": "YtBUjQoLQFhBaQAqlunmZSjbCLx1",
+  "customerName": "Ninja",
+  "ethereumPublicAddress": "0x6e89F6fa95D517eE7a0a293D8A1d3C502bfB0702",
+  "googleUserId": "YtBUjQoLQFhBaQAqlunmZSjbCLx1",
+  "companyName": "company"
+}
+
+{
+  "accountNumber": "F9-10-63-73",
+  "customerId": "HNaR13XWSvemMOVeC1Oafbj9dkV2",
+  "customerName": "Kakaroto",
+  "ethereumPublicAddress": "0x6e89F6fa95D517eE7a0a293D8A1d3C502bfB0703",
+  "googleUserId": "HNaR13XWSvemMOVeC1Oafbj9dkV2",
+  "companyName": "company"
+}
+
+
+{
+  "accountNumber": "2F-CA-1F-13",
+  "customerId": "IgMPw3VYEdUsbQbyGQbhsa43vrg2",
+  "customerName": "Guilermo Tel ",
+  "ethereumPublicAddress": "0x6e89F6fa95D517eE7a0a293D8A1d3C502bfB0704",
+  "ethereumPublicAddres": "0x6e89F6fa95D517eE7a0a293D8A1d3C502bfB0704",
+  "googleUserId": "IgMPw3VYEdUsbQbyGQbhsa43vrg2"",
+  "companyName": "company"
+}

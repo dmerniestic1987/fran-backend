@@ -17,11 +17,20 @@ public class Customer implements Serializable{
 	
 	@Id
     private String customerId;
+	
+	private String companyName;
+	
+	@Indexed(unique = true)
+	private String googleUserId;
+	
     private String customerName;
-    private String companyName;
+    
+    @Indexed(unique = true)
+    private String accountNumber;
     
     @Indexed(unique = true)
     private String ethereumPublicAddress;
+
     
 	public String getCustomerId() {
 		return customerId;
@@ -35,31 +44,39 @@ public class Customer implements Serializable{
 	public void setCompanyName(String companyName) {
 		this.companyName = companyName;
 	}
+	public String getGoogleUserId() {
+		return googleUserId;
+	}
+	public void setGoogleUserId(String googleUserId) {
+		this.googleUserId = googleUserId;
+	}
 	public String getCustomerName() {
 		return customerName;
 	}
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
 	}
-	public String getEthereumPublicAdress() {
+	public String getAccountNumber() {
+		return accountNumber;
+	}
+	public void setAccountNumber(String accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+	public String getEthereumPublicAddress() {
 		return ethereumPublicAddress;
 	}
-	public void setEthereumPublicAdress(String ethereumPublicAdress) {
-		this.ethereumPublicAddress = ethereumPublicAdress;
+	public void setEthereumPublicAddress(String ethereumPublicAddress) {
+		this.ethereumPublicAddress = ethereumPublicAddress;
 	}
 	@Override
 	public String toString() {
-		return "Customer [customerId=" + customerId + ", customerName=" + customerName + ", companyName=" + companyName
-				+ ", ethereumPublicAdress=" + ethereumPublicAddress + "]";
+		return "Customer [customerId=" + customerId + ", customerName=" + customerName 	+ ", ethereumPublicAdress=" + ethereumPublicAddress + "]";
 	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((companyName == null) ? 0 : companyName.hashCode());
 		result = prime * result + ((customerId == null) ? 0 : customerId.hashCode());
-		result = prime * result + ((customerName == null) ? 0 : customerName.hashCode());
-		result = prime * result + ((ethereumPublicAddress == null) ? 0 : ethereumPublicAddress.hashCode());
 		return result;
 	}
 	@Override
@@ -71,27 +88,11 @@ public class Customer implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		Customer other = (Customer) obj;
-		if (companyName == null) {
-			if (other.companyName != null)
-				return false;
-		} else if (!companyName.equals(other.companyName))
-			return false;
 		if (customerId == null) {
 			if (other.customerId != null)
 				return false;
 		} else if (!customerId.equals(other.customerId))
 			return false;
-		if (customerName == null) {
-			if (other.customerName != null)
-				return false;
-		} else if (!customerName.equals(other.customerName))
-			return false;
-		if (ethereumPublicAddress == null) {
-			if (other.ethereumPublicAddress != null)
-				return false;
-		} else if (!ethereumPublicAddress.equals(other.ethereumPublicAddress))
-			return false;
 		return true;
 	}
-	
 }
