@@ -18,6 +18,8 @@ public class Customer implements Serializable{
 	@Id
     private String customerId;
 	
+	private String companyName;
+	
 	@Indexed(unique = true)
 	private String googleUserId;
 	
@@ -28,6 +30,7 @@ public class Customer implements Serializable{
     
     @Indexed(unique = true)
     private String ethereumPublicAddress;
+
     
 	public String getCustomerId() {
 		return customerId;
@@ -35,18 +38,23 @@ public class Customer implements Serializable{
 	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
 	}
-
-	public String getCustomerName() {
-		return customerName;
+	public String getCompanyName() {
+		return companyName;
 	}
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
 	}
 	public String getGoogleUserId() {
 		return googleUserId;
 	}
 	public void setGoogleUserId(String googleUserId) {
 		this.googleUserId = googleUserId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
 	}
 	public String getAccountNumber() {
 		return accountNumber;
