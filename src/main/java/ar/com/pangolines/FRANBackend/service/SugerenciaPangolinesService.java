@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import ar.com.pangolines.FRANBackend.bean.MapeoRubros;
+import ar.com.pangolines.FRANBackend.bean.Recomendacion;
 import ar.com.pangolines.FRANBackend.bean.Rubro;
 import ar.com.pangolines.FRANBackend.dao.dataAnalytics.MapeosRubrosDaoImpl;
 
@@ -20,6 +21,18 @@ public class SugerenciaPangolinesService {
 	@Qualifier("mapeosRubrosDaoImpl")
 	private MapeosRubrosDaoImpl dao;
 	
+	/**
+	 * Obtiene una referencia en base l número de cuenta
+	 * @param accountNumber
+	 * @return
+	 */
+	public Recomendacion findByAccountNumber(String accountNumber) {
+		Recomendacion recomendacion = new Recomendacion();
+		recomendacion.setAccountNumber(accountNumber);
+		recomendacion.setRubro1FrancesGo("3435");
+		recomendacion.setRubro2FrancesGO("3517");
+		return recomendacion;
+	}
 	/**
 	 * Obtiene el rubro dado uno de bigData
 	 * @param rubroBigData

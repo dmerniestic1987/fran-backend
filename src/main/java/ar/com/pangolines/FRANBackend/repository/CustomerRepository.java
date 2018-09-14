@@ -13,6 +13,8 @@ import ar.com.pangolines.FRANBackend.bean.Customer;
  */
 public interface CustomerRepository extends MongoRepository<Customer, String> {
 	
+	public Customer findByGoogleUserId(String googleUserId);
+	
 	public List<Customer> findAllByCustomerName(String customerName);
 	
 	public Customer findAllByEthereumPublicAddress(String ethereumPublicAddress);

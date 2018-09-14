@@ -53,4 +53,13 @@ public class CustomerServiceMockImpl implements CustomerService{
 	public void deleteCustomer(String customerId) {
 	}
 
+	@Override
+	public Customer getCustomerByGoogleId(String googleId) {
+		Customer customer = new Customer();
+		customer.setCustomerId("1");
+		customer.setCustomerName("Ludwing Von Bertalanfy");
+		
+		return customer;
+	}
+
 }
