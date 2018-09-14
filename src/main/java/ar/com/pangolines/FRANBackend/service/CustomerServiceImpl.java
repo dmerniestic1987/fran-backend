@@ -41,4 +41,10 @@ public class CustomerServiceImpl implements CustomerService {
 		return this.customerRepo.save(customer);
 	}
 
+	@Override
+	public void deleteCustomer(String customerId) {
+		logger.info("deleteCustomer");
+		this.customerRepo.deleteById(customerId);
+	}
+
 }

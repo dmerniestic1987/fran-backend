@@ -29,4 +29,10 @@ public interface CustomerService {
 	 * @param customer
 	 */
 	public Customer createCustomer(Customer customer);
+	
+	/**
+	 * Deletes a cusomter
+	 * @param customerId
+	 */
+	public void deleteCustomer(String customerId);
 }

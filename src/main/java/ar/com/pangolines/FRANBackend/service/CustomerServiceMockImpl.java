@@ -54,4 +54,8 @@ public class CustomerServiceMockImpl implements CustomerService{
 		return customer;	
 	}
 
+	@Override
+	public void deleteCustomer(String customerId) {
+	}
+
 }
