@@ -12,9 +12,9 @@ import ar.com.pangolines.FRANBackend.bean.MapeoRubros;
 import ar.com.pangolines.FRANBackend.bean.Rubro;
 import ar.com.pangolines.FRANBackend.dao.dataAnalytics.MapeosRubrosDaoImpl;
 
-@Service("sugerenciaPangolines")
-public class SugerenciaPangolines {
-	private static final Logger logger = LogManager.getLogger(SugerenciaPangolines.class);
+@Service("sugerenciaPangolinesService")
+public class SugerenciaPangolinesService {
+	private static final Logger logger = LogManager.getLogger(SugerenciaPangolinesService.class);
 	
 	@Autowired
 	@Qualifier("mapeosRubrosDaoImpl")
@@ -47,5 +47,21 @@ public class SugerenciaPangolines {
 			rubro.setRubroBigData("RUBRO 001");			
 		}
 		return rubro;
+	}
+	
+	/**
+	 * Botiene tiendos lso rubros
+	 * @return
+	 */
+	public MapeoRubros getMapeoAllRubros() {
+		MapeoRubros mapeo = null;
+		try {
+			mapeo = this.dao.getMapeoRubros();
+		} catch (IOException e) {
+			logger.error("Error al leer archivo de datos", e.getMessage());
+			mapeo = new MapeoRubros();
+		}
+		
+		return mapeo;
 	}
 }
