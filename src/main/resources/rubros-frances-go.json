@@ -1,0 +1,49 @@
+{
+"name": "Rubros",
+"values": [{
+  "id": "12533",
+  "name": "Destacados"
+}, {
+  "id": "16458",
+  "name": "Electro y Tecnolog\u00eda"
+}, {
+  "id": "13527",
+  "name": "F\u00fatbol"
+}, {
+  "id": "16466",
+  "name": "Regalos"
+}, {
+  "id": "4883",
+  "name": "Seas o No Cliente BBVA"
+}, {
+  "id": "3579",
+  "name": "Automotores"
+}, {
+  "id": "3417",
+  "name": "Belleza y Cuidado Personal"
+}, {
+  "id": "3413",
+  "name": "Entretenimiento"
+}, {
+  "id": "3412",
+  "name": "Gastronom\u00eda"
+}, {
+  "id": "3578",
+  "name": "Hogar y Deco"
+}, {
+  "id": "3422",
+  "name": "Viajes y Turismo"
+}, {
+  "id": "3427",
+  "name": "Promociones Especiales"
+}, {
+  "id": "3517",
+  "name": "Moda"
+}, {
+  "id": "3435",
+  "name": "Otros Comercios y Servicios"
+}, {
+  "id": "3580",
+  "name": "Jugueterias"
+}]
+}

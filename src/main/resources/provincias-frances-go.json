@@ -1,0 +1,101 @@
+{
+   "parameter":"province",
+   "values":[
+      {
+         "id":"2639",
+         "name":"Buenos Aires"
+      },
+      {
+         "id":"2616",
+         "name":"Capital Federal"
+      },
+      {
+         "id":"2617",
+         "name":"Catamarca"
+      },
+      {
+         "id":"2618",
+         "name":"Chaco"
+      },
+      {
+         "id":"2619",
+         "name":"Chubut"
+      },
+      {
+         "id":"2621",
+         "name":"C\u00f3rdoba"
+      },
+      {
+         "id":"2620",
+         "name":"Corrientes"
+      },
+      {
+         "id":"2622",
+         "name":"Entre R\u00edos"
+      },
+      {
+         "id":"2623",
+         "name":"Formosa"
+      },
+      {
+         "id":"2624",
+         "name":"Jujuy"
+      },
+      {
+         "id":"2625",
+         "name":"La Pampa"
+      },
+      {
+         "id":"2626",
+         "name":"La Rioja"
+      },
+      {
+         "id":"2627",
+         "name":"Mendoza"
+      },
+      {
+         "id":"2628",
+         "name":"Misiones"
+      },
+      {
+         "id":"2629",
+         "name":"Neuqu\u00e9n"
+      },
+      {
+         "id":"2630",
+         "name":"R\u00edo Negro"
+      },
+      {
+         "id":"2631",
+         "name":"Salta"
+      },
+      {
+         "id":"2632",
+         "name":"San Juan"
+      },
+      {
+         "id":"2633",
+         "name":"San Luis"
+      },
+      {
+         "id":"2634",
+         "name":"Santa Cruz"
+      },
+      {
+         "id":"2635",
+         "name":"Santa Fe"
+      },
+      {
+         "id":"2636",
+         "name":"Santiago del Estero"
+      },
+      {
+         "id":"2638",
+         "name":"Tierra del Fuego"
+      },
+      {
+         "id":"2637",
+         "name":"Tucum\u00e1n"
+      }
+   ]
+}
