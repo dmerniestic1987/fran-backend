@@ -2,6 +2,7 @@ package ar.com.pangolines.FRANBackend.bean;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.math.BigInteger;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -9,13 +10,13 @@ public class Wallet implements Serializable{
 	private static final long serialVersionUID = -1779497736481428519L;
 	private String ethereumAddress;
 	private BigDecimal amountInEther;
-	private Long amountInPangolines;
+	private BigInteger amountInPangolines;
 	
 	public Wallet() {
 		super();
 		ethereumAddress = ""; 
 		amountInEther = new BigDecimal(-1);
-		amountInPangolines = -1L;
+		amountInPangolines = BigInteger.valueOf(-1L);
 	}
 	
 	@JsonProperty("ethereumAddress")
@@ -35,10 +36,10 @@ public class Wallet implements Serializable{
 	}
 	
 	@JsonProperty("amountInPangolines")
-	public Long getAmountInPangolines() {
+	public BigInteger getAmountInPangolines() {
 		return amountInPangolines;
 	}
-	public void setAmountInPangolines(Long amountInPangolines) {
+	public void setAmountInPangolines(BigInteger amountInPangolines) {
 		this.amountInPangolines = amountInPangolines;
 	}
 	@Override

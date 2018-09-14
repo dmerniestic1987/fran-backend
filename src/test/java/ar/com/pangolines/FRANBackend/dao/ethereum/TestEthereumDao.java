@@ -64,4 +64,8 @@ public class TestEthereumDao{
 		logger.info("RawResponse: " + ob.getRawResponse());
 		
 	}
+	@Test
+	public void testBalance() throws Exception{
+		logger.info("Balance en PGS: " + this.dao.balanceInPangolines("0x6e89F6fa95D517eE7a0a293D8A1d3C502bfB0701").toString());
+	}
 }

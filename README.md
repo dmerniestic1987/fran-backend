@@ -35,3 +35,8 @@ Luego: Los entornos son:
 - [Travis-ci.com] Login com github de dmerniestic1987
 - [Heroku       ] Login com diego.alejandro.mernies@gmail.com
 
+
+## Compilación de contratos para java
+cd /home/diego/src/github/dmerniestic1987/pangolines/pangolines-coin
+
+web3j truffle generate build/contracts/PangolinesToken.json -o java -p ar.com.pangolines.FRANBackend.contract

@@ -2,6 +2,7 @@ package ar.com.pangolines.FRANBackend.dao.ethereum;
 
 import java.io.File;
 import java.io.IOException;
+import java.math.BigInteger;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,6 +18,10 @@ import org.web3j.protocol.core.DefaultBlockParameterName;
 import org.web3j.protocol.core.methods.response.EthGetBalance;
 import org.web3j.protocol.core.methods.response.Web3ClientVersion;
 import org.web3j.protocol.http.HttpService;
+import org.web3j.tx.Contract;
+import org.web3j.tx.ManagedTransaction;
+
+import ar.com.pangolines.FRANBackend.contract.PangolinesToken;
 
 @Repository("ethereumDaoImpl")
 public class EthereumDaoImpl {
@@ -33,6 +38,9 @@ public class EthereumDaoImpl {
 	
 	@Value("${ETHEREUM_NODE_ENDPOINT}")
 	private String INFURA_ENDPOINT; 
+	
+	@Value("${PANGOLINES_TOKEN_SMART_CONTRACT}")
+	private String PANGOLINES_TOKEN_SMART_CONTRACT;
 	
 	@Autowired
 	private ResourceLoader resourceLoader;
@@ -85,4 +93,17 @@ public class EthereumDaoImpl {
 		Credentials cred = WalletUtils.loadCredentials("pangolines2018", file);
 		return cred;
 	}
+	
+	/**
+	 * obtiene el balance en Pangolines
+	 * @param publicAddress
+	 * @throws Exception
+	 */
+    public BigInteger balanceInPangolines(String publicAddress) throws Exception {
+    	logger.info("EthereumDao.balanceInPangolines()");
+    	Web3j web3j = Web3j.build(new HttpService(ETHEREUM_NODE_ENDPOINT));
+        Credentials credentials = getCredentials();
+        PangolinesToken contract = PangolinesToken.load(PANGOLINES_TOKEN_SMART_CONTRACT, web3j, credentials,  ManagedTransaction.GAS_PRICE, Contract.GAS_LIMIT);
+        return contract.balanceOf(publicAddress).send();
+    }	
 }

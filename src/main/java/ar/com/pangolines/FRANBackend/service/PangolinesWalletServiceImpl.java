@@ -1,6 +1,7 @@
 package ar.com.pangolines.FRANBackend.service;
 
 import java.io.IOException;
+import java.math.BigInteger;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,13 +25,18 @@ public class PangolinesWalletServiceImpl implements PangolinesWalletService {
 	
 	@Override
 	public Wallet findWalletByEthereumAddress(String publicAddress) {
+		logger.info("findWalletByEthereumAddress: " + publicAddress);
 		Wallet wallet = new Wallet();
 		try {
 			EthGetBalance balance = this.dao.getBalance(publicAddress);
 			wallet.setEthereumAddress(publicAddress);
-			wallet.setAmountInEther( Convert.fromWei(balance.getBalance().toString(), Unit.ETHER));
-			wallet.setAmountInPangolines(-1L);
+			wallet.setAmountInEther( Convert.fromWei(balance.getBalance().toString(), Unit.ETHER));	
+			
+			BigInteger balanceInPangolines = this.dao.balanceInPangolines(publicAddress);
+			wallet.setAmountInPangolines(balanceInPangolines);
 		} catch (IOException e) {
+			logger.error("Error al obtener el la wallet", e);
+		} catch (Exception e) {
 			logger.error("Error al obtener el la wallet", e);
 		}
 		return wallet;
